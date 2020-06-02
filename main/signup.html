@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新闻详情</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/holder.min.js"></script>
+</head>
+<body>
+  <!-- 头部导航 -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="index.html" class="navbar-brand"></a> 
+        <label class="menu navbar-toggle" data-toggle="hidden-xs" for="toggle-checkbox">Menu</label>  
+      </div>
+      <!--bootstrap中的隐藏功能 在超小屏幕上隐藏 -->
+      <input id="toggle-checkbox" type="checkbox">
+      <div class="hidden-xs">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">热门</a></li>
+          <li><a href="index.html">国内</a></li>
+          <li><a href="index.html">国际</a></li>
+          <li><a href="index.html">社会</a></li>
+          <li><a href="index.html">军事</a></li>
+          <li><a href="index.html">政务</a></li>
+        </ul>   
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html">登录</a></li>
+          <li><a href="signup.html">注册</a></li>
+        </ul>      
+      </div>
+
+    </div>
+  </nav>
+  <div class="container container-small">
+    <h1>注册
+      <small>已注册？<a href="login.html">直接登录</a></small>
+    </h1>
+    <form action="#">
+      <div class="form-group">
+        <label for="num">手机</label>
+        <input type="text" id="num" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="checknum">验证码</label>
+        <div class="input-group">
+          <input type="password" id="checknum" class="form-control">
+            <div class="input-group-btn">
+              <button class="btn btn-default">获取验证码</button>
+            </div>          
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">密码</label>
+        <input type="password" id="password" class="form-control">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block">注册</button>       
+      </div>
+
+      <div class="form-group">
+       注册本网站用户及代表您同意 <a href="#">本站条款</a>
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>
